@@ -1,0 +1,9 @@
+<%- include ('../partials/header') %>
+<header class="home-cta">
+  <h1>GET Items</h1>
+</header>
+
+<% for (let product of products) { %> 
+    <%= JSON.stringify(product, null ,2) %>
+<% } %>
+<%- include ('../partials/footer') %>
